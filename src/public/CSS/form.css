@@ -1,0 +1,107 @@
+:root{
+    --Colors-body: #F3F3F3;
+    --Colors-lema: #E6E6E5;
+    --Fuent-Negra: #484848;
+    --Fuent-Blanca:#FFFFFF;
+    --Barra-Menu: #517E54;
+    --Secc-Economico: #43DC81;
+    --Secc-Basico: #FFAC30;
+    --Secc-Vip: #D758E3;
+    --Tarjetas: #51A6F6;
+    --Boton_Regis: #51A6F6; 
+}
+
+
+/* formulario */
+.container-formulario .titulo-formulario h1{
+    color: var(--Fuent-Negra);
+}
+
+.Container-General .det-formulario{
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    background: var(--Colors-body);
+    box-shadow: 0px 0px 3px grey;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 33%;
+}
+
+.Container-General .container-formulario{
+    width: 100%;
+    color: var(--Fuent-Blanca);
+}
+
+.container-formulario .form-registrer{
+    width: 100%;
+    margin: auto;
+}
+
+.container-formulario .form-registrer .container-flex{
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.container-formulario .form-registrer .container-flex input[type='text'], input[type='tel'], input[type='email'], input[type='date']{
+    font-family: Helvetica;
+    font-size: 16px;
+    color: var(--Fuent-Negra);
+    width: 100%;
+    outline: none;
+    padding: 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(122, 122, 122);
+}
+
+.container-formulario .form-registrer .container-flex input:focus{
+    outline: 0;
+    border-color: crimson;
+}
+
+.container-formulario .form-registrer .container-flex.sucess input{
+    border-color: #43DC81;
+}
+
+.container-formulario .form-registrer .container-flex i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.container-formulario .form-registrer .container-flex i.fa-check{
+    color: #43DC81;
+}
+
+.container-formulario .form-registrer .container-flex label{
+    color: rgb(92, 91, 91);
+}
+
+.container-formulario .form-registrer .container-flex .form-label{
+    position: absolute;
+    top: 16px;
+    left: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.container-formulario .form-registrer .container-flex .group-selector{
+    width: 420px;
+    height: 40px;
+    margin-top: 50px;
+}
+
+.Container-General .form-registrer .form-submit{
+    width: 80%;
+    background: var(--Boton_Regis);
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    color: var(--Fuent-Blanca);
+    font-size: 1.2em;
+    margin-left: 10%;
+    cursor: pointer; 
+}

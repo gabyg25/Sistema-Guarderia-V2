@@ -1,0 +1,43 @@
+<form action="/save" class="form-registrer" name="fomulario-enviar" method="post">
+    <div class="container-flex">
+        <input type="text" class="form-input" name="nombre" placeholder="Nombre completo">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-times"></i>
+        <small>Campo Vacio</small>
+    </div>
+
+    <div class="container-flex">
+        <input type="tel" class="form-input" name="telefono" placeholder="Telefono">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-times"></i>
+        <small>Campo Vacio</small>
+    </div>
+
+    <div class="container-flex">
+        <input type="email" class="form-input" name="correo" placeholder="Correo@gmail.com">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-times"></i>
+        <small>Campo Vacio</small>
+    </div>
+
+    <div class="container-flex">
+        <input type="date" class="form-input" name="fecha">
+        <i class="fas fa-check"></i>
+        <i class="fas fa-times"></i>
+        <small>Campo Vacio</small>
+    </div>
+
+    <div class="container-flex">
+        <label for="correo" class="form-label"><i class="fas fa-paw"></i> Seleccionar Serivicio: </label>
+        <select name="servicio" id="" class="group-selector">
+            <option value="" disabled selected>Seleccionar</option>
+            <option value="Economico">Economico</option>
+            <option value="Basico">Basico</option>
+            <option value="Vip">Vip</option>
+        </select>
+        <i class="fas fa-check"></i>
+        <i class="fas fa-times"></i>
+        <small>Campo Vacio</small>
+    </div>
+    <input type="submit" value="Reservar" class="form-submit" id="btn-enviar">
+</form>

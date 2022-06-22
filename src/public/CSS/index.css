@@ -1,0 +1,151 @@
+:root{
+    --Colors-body: #F3F3F3;
+    --Colors-lema: #E6E6E5;
+    --Fuent-Negra: #484848;
+    --Fuent-Blanca:#FFFFFF;
+    --Barra-Menu: #517E54;
+    --Secc-Economico: #43DC81;
+    --Secc-Basico: #FFAC30;
+    --Secc-Vip: #D758E3;
+    --Tarjetas: #51A6F6;
+    --Boton_Regis: #51A6F6; 
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top: 370px;
+    transition: padding-top 0.5s ease;
+}
+
+header{
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(to right, rgba(104, 102, 102, 0.589), rgba(122, 120, 120, 0.548)),
+                 url(/Images/header.jpg);
+    background-position: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: Helvetica;
+    color: var(--Fuent-Blanca);
+    position: absolute;
+    top: 0;
+    overflow: visible;
+    transition: all 0.5s ease;
+    margin: 0;
+}
+
+header h1{
+    font-size: 70px;
+}
+
+.logo-Prin{
+    position: absolute;
+    top: 9%;
+    right: 85%;
+    width: 130px;
+    height: 130px;
+}
+
+nav{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background: var(--Barra-Menu);
+    border: 1px solid #3a533b;
+}
+
+header nav a{
+    position: relative;
+    padding: 10px 15px;
+    width: 49%;
+    font-size: 25px;
+    font-family: Helvetica;
+    color: #E6E6E5;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav a:after{
+    content: "";
+    position: absolute;
+    display: block;
+    background: var(--Colors-body);
+    height: 9px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+header nav a:hover:after{
+    width: 100%;
+    display: block;
+}
+
+.Container-header{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Sobre nosotros */
+[data-content]{
+    display: none;
+}
+
+.active[data-content] {
+    display: block;
+}
+
+.Container-General{
+    background: var(--Colors-lema);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: -1%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.Container-General .container-bloque .Image-Two{
+    width: 90%;
+    position: relative;
+    margin: 90px;
+}
+
+.Container-General .container-bloque .contet-text{
+    position: relative;
+    width: 95%;
+    right: -13%;
+    text-align: justify;
+    padding-top: 15%;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+.Container-General .Container-Contact h1{
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.Container-General .Container-Contact ul{
+    list-style-position: outside;
+    list-style-type: none;
+    padding-left: 43%;
+    font-size: 19px;
+    font-family: Helvetica;
+}

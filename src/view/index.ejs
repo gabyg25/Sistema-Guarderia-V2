@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="/images/logo.png">
+    <title>Perritos AC</title>
+    <%- include('head.ejs') %> 
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="Header-Prin">
+        <img src="/Images/logo.png" alt="logo-nav" class="logo-Prin">
+        <nav>
+            <a data-target="#id-Inicio">Quienes Somos</a>
+            <a data-target="#id-Reservacion">Reservaciones</a>
+        </nav>
+        <div class="Container-header">
+            <h1>Perritos A.C.</h1>
+            <h5>Cuartos Amplios con Música Tranquilzante</h5>
+        </div>
+    </header>
+
+    <div class="Container-General">
+        <div data-content id="id-Inicio" class="active">
+            <div class="container-bloque">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="/images/image.jpg" alt="Images1" class="Image-Two">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="contet-text">
+                            <p>Somos una empresa Chiapaneca dedicada al cuidado de Mascotas. Ofrecemos cuartos
+                                amplios con música tranquilizante. </p>
+                            <p> Si tienes que salir y no sabes con quien dejar a tu fiel amigo ¡Somos tu Mejor Opcion!
+                            </p>
+                            <p> Le damos a tu mascota el cuidado que quisieramos que le dieras a las nuestras, porque
+                                sabemos lo que
+                                significan para ti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Container-Contact">
+                <h1>Contactanos</h1>
+                <ul>
+                    <li><i class="fas fa-phone"></i> : 961 123 55 555</li>
+                    <li><i class="far fa-envelope"></i> : perritos@gmail.com </li>
+                    <li><i class="fab fa-facebook"></i> : Guarderia Perritos AC </li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-content id="id-Reservacion">
+            <h1>Elige Tu Paquete</h1>
+            <h5>Todos los paquetes incluyen tazón de agua y comida <i class="fas fa-bone"></i></h5>
+
+            <div class="Container-card">
+               <%- include('reservation.ejs')%>
+            </div>
+            <!-- Formulario -->
+            <div class="container-formulario">
+                <div class="titulo-formulario">
+                    <h1> Reservaciones </h1>
+                </div>
+                <div class="det-formulario">
+                    <%- include('form.ejs')%>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+:root{
+    --Colors-body: #F3F3F3;
+    --Colors-lema: #E6E6E5;
+    --Fuent-Negra: #484848;
+    --Fuent-Blanca:#FFFFFF;
+    --Barra-Menu: #517E54;
+    --Secc-Economico: #43DC81;
+    --Secc-Basico: #FFAC30;
+    --Secc-Vip: #D758E3;
+    --Tarjetas: #51A6F6;
+    --Boton_Regis: #51A6F6; 
+}
+
+/* Reservaciones Edicion */
+.Container-General #id-Reservacion h1,h5{
+    text-align: center;
+}
+
+.Container-General #id-Reservacion .Container-card {
+    margin: 8rem;
+    margin-top: 5rem;
+    font-family: Helvetica;
+}
+
+.Container-General #id-Reservacion .Container-card .card{
+    border-radius: 20px;
+    border: none;
+}
+
+.Container-General #id-Reservacion .Container-card .card-header{
+    text-align: center;
+    font-size: 30px;
+    color: var(--Fuent-Blanca);
+}
+
+.Container-General #id-Reservacion .Container-card #card1{
+    background: var(--Secc-Economico);
+}
+
+.Container-General #id-Reservacion .Container-card #card2{
+    background: var(--Secc-Basico);
+}
+
+.Container-General #id-Reservacion .Container-card #card3{
+    background: var(--Secc-Vip);
+}
+
+.Container-General #id-Reservacion .card-body{
+    font-family: Helvetica;
+}
+
+.Container-General #id-Reservacion .card-body ul{
+    list-style-position: outside;
+    list-style-type: none;
+    padding-left: 13%;
+    text-align: left;
+}
+
+.Container-General #id-Reservacion .card-body h1{
+    font-size: 50px;
+}
+
+.Container-General #id-Reservacion .card-body p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.Container-General #id-Reservacion .Container-card .card-body a{
+    width: 180px;
+    margin-left: 50%;
+    margin-bottom: 5%;
+    transform: translateX(-50%);
+    color: var(--Fuent-Blanca);
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+}
+
+.Container-General .Container-card .card-body #button1{
+    background: var(--Secc-Economico);
+}
+
+.Container-General .Container-card .card-body #button2{
+    background: var(--Secc-Basico);
+}
+
+.Container-General .Container-card .card-body #button3{
+    background: var(--Secc-Vip);
+}
