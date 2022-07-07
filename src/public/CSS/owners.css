@@ -13,8 +13,9 @@
 
 .Container-General #id-TablaDuenos .sub-Container {
     width: 1480px;
-    height: 500px;
+    height: 600px;
     text-rendering: optimizeLegibility;
+    max-height: 800px;
 }
 
 .Container-General #id-TablaDuenos h1{
@@ -67,5 +68,6 @@
     background: var(--Colors-body);
     text-align: center;
     font-size: 12px;
+    color: var(--Barra-Menu);
 }
 
