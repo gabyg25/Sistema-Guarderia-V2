@@ -23,7 +23,7 @@
 }
 
 #id-TablaDuenos .sub-Container .sub2 {
-    /* background: #43DC81; */
+    margin-top: 40px;
     position: absolute;
     border-radius: 3px;
     border-collapse: collapse;
@@ -36,7 +36,24 @@
 }
 
 .sub2 table {
-    margin-top: 40px;
+    margin-top: 50px;
+    background-color: var(--Colors-lema);
+}
+.barra-busqueda{
+    margin-top: 50px;
+}
+
+.barra-busqueda input{
+    display: block;
+    padding: 10px 15px;
+    margin: 10px auto 10px auto;
+    width: 90%;
+    outline: none;
+    border: 1px solid var(--Barra-Menu);
+    border-radius: 4px;
+    color: var(--Barra-Menu);
+    font-size: medium;
+    background: var(--Colors-lema);
 }
 
 .sub2 #cabecera {
