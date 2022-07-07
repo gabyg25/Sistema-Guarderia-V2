@@ -1,5 +1,8 @@
 <div class="sub2">
     <table class="table">
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar...">
+        </div>
         <thead id="cabecera">
             <tr>
                 <th>NOMBRE</th>
@@ -10,12 +13,14 @@
         </thead>
 
         <tbody id="cuerpo">
+            <% if (data.length > 0) { data.forEach((user) => { %>
             <tr>
-                <td>No data found</td>
-                <td>No data found</td>
-                <td>No data found</td>
-                <td>No data found</td>
+                <td> <%= user.n_cliente %> </td>
+                <td> <%= user.tel_cliente %> </td>
+                <td> <%= user.fecha %> </td>
+                <td> <%= user.servicio %> </td>
             </tr>
+            <% })} %>
         </tbody>
     </table>
 </div>

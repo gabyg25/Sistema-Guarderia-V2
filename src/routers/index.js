@@ -8,8 +8,10 @@ router.get('/', (req, res) => {
    });
 });
 
-router.get('/inicio', (req, res) => {
-    res.render('index');
+router.get('/inicio', (req, res, next) => {
+    reservacionDAO.getAllReservation((data) => {
+        res.render('index', {data});
+    })
 });
 
 router.post('/save', (req, res) => {
