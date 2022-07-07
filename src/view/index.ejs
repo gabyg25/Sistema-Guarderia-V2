@@ -16,7 +16,9 @@
         <nav>
             <a data-target="#id-Inicio">Quienes Somos</a>
             <a data-target="#id-Reservacion">Reservaciones</a>
+            <a data-target="#id-TablaDuenos">Dueños</a>
         </nav>
+
         <div class="Container-header">
             <h1>Perritos A.C.</h1>
             <h5>Cuartos Amplios con Música Tranquilzante</h5>
@@ -71,6 +73,15 @@
                 </div>
             </div>
         </div>
+
+
+        <div data-content id="id-TablaDuenos">
+            <h1>Registros Dueños</h1>
+            <div class="sub-Container">
+                <%- include('owners.ejs')%>
+            </div>
+        </div>
+
     </div>
 </body>
 

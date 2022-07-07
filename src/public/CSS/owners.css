@@ -1,0 +1,54 @@
+:root{
+    --Colors-body: #F3F3F3;
+    --Colors-lema: #E6E6E5;
+    --Fuent-Negra: #484848;
+    --Fuent-Blanca:#FFFFFF;
+    --Barra-Menu: #517E54;
+    --Secc-Economico: #43DC81;
+    --Secc-Basico: #FFAC30;
+    --Secc-Vip: #D758E3;
+    --Tarjetas: #51A6F6;
+    --Boton_Regis: #51A6F6; 
+}
+
+.Container-General #id-TablaDuenos .sub-Container {
+    width: 1480px;
+    height: 500px;
+    text-rendering: optimizeLegibility;
+}
+
+.Container-General #id-TablaDuenos h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#id-TablaDuenos .sub-Container .sub2 {
+    /* background: #43DC81; */
+    position: absolute;
+    border-radius: 3px;
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 320px;
+    width: 1410px;
+    padding: 5px;
+    max-width: 1410px;
+}
+
+.sub2 table {
+    margin-top: 40px;
+}
+
+.sub2 #cabecera {
+    background: var(--Barra-Menu);
+    text-align: center;
+    color: var(--Colors-body);
+    font-size: 14px;
+}
+
+.sub2 #cuerpo {
+    background: var(--Colors-body);
+    text-align: center;
+    font-size: 12px;
+}
+
